@@ -6,10 +6,12 @@
 
 	.tt-input, .tt-hint {
 		padding: 15px;
-		text-align: center;
 		font-size: 30px;
 		border: 0;
 		border-bottom: 1px solid #333;
+	}
+	.tt-hint {
+		color: #ccc;
 	}
 	.tt-input:focus, .tt-hint:focus {
 		outline: 0;
