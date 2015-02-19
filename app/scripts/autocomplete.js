@@ -13,7 +13,8 @@
 	    	return substrRegex.test(d[key]);
 	    });
 	    if(matches.length == 1) {
-	    	app.drawResults(matches[0]);
+	    	//app.drawResults(matches[0]);
+	    	//app.$typeahead.trigger('blur');
 	    }
 	 
 	    cb(matches.slice(0, 10));
@@ -21,7 +22,7 @@
 	};
 
 	app.initTypeahead = function() {
-		var $typeahead = $("#job").typeahead({
+		app.$typeahead = $("#job").typeahead({
 			minLength: 1,
 			highlight: true,
 		},{

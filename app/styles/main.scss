@@ -1,4 +1,4 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$icon-font-path: "fonts/";
 // bower:scss
 @import "../_bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -7,4 +7,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 @import 'modules/layout';
 @import 'modules/probChart';
+@import 'modules/search';
 @import 'modules/typeahead';
+@import 'modules/utils';

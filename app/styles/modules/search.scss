@@ -1,0 +1,17 @@
+.search {
+	$input-padding: 10px;
+	$icon-size: 33px;
+
+	input {
+		padding: $input-padding;
+		font-size: 24px;
+		margin-bottom: 15px;
+
+		background: url("../images/search.png") no-repeat scroll;
+		background-position: $input-padding 50%;
+		background-size: $icon-size;
+		
+		padding-left: $icon-size + $input-padding * 2 !important;
+	}
+
+}
