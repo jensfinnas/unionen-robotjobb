@@ -1,9 +1,27 @@
-<!DOCTYPE html> <html class=no-js> <head> <meta charset=utf-8> <title>unionen robotjobb</title> <meta name=description content=""> <meta name=viewport content="width=device-width"> <meta name=ROBOTS content="NOINDEX, NOFOLLOW"> <link rel="shortcut icon" href=/6df2b309.favicon.ico> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel=stylesheet href=styles/50b0dda8.vendor.css> <link rel=stylesheet href=styles/4caedfc6.main.css>  <body> <!--[if lt IE 10]>
+<!DOCTYPE html> <html class=no-js> <head> <meta charset=utf-8> <title>unionen robotjobb</title> <meta name=description content=""> <meta name=viewport content="width=device-width"> <meta name=ROBOTS content="NOINDEX, NOFOLLOW"> <link rel="shortcut icon" href=/6df2b309.favicon.ico> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel=stylesheet href=styles/50b0dda8.vendor.css> <link rel=stylesheet href=styles/a5ee2cd6.main.css>  <body> <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> <div> <header> <div class=container> <div class=row> <div class="col-sm-8 col-sm-offset-2"> <h1>Kommer ditt jobb att digitaliseras bort?</h1> <div class=search> <input id=job data-provide=typeahead placeholder="Sök efter ett yrke" onclick="this.setSelectionRange(0, this.value.length)"> <div class=examples></div> </div> </div> </div> </div> </header> <div class=container> <div class=row> <div class="col-sm-8 col-sm-offset-2"> <div id=results class=hidden> <div id=gauge></div> <div id=probability> Risken att det här yrket försvinner med digitaliseringen är <span class=value></span>. </div> <div id=comparison-sentence></div> <button class="btn btn-default btn-lg" onclick=app.clearSearch()>Sök efter ett annat yrke</button> <div id=lists class=row> <div class=col-sm-6> <h3>Yrken med låg risk</h3> <table id=low class=table></table> <button class="btn btn-sm btn-default" onclick="app.updateList($('#low'), app.lowRiskJobs())"> <span class="glyphicon glyphicon-refresh" aria-hidden=true></span> Visa fler yrken med låg risk </button> </div> <!--<div class="col-xs-4">
-                  <h3>Liknande yrken</h3>
-                  <table id="similar" class="table"></table>
-                </div>--> <div class=col-sm-6> <h3>Yrken med hög risk</h3> <table id=high class=table></table> <button class="btn btn-sm btn-default" onclick="app.updateList($('#high'), app.highRiskJobs())"> <span class="glyphicon glyphicon-refresh" aria-hidden=true></span> Visa fler yrken med hög risk </button> </div> </div> <div id=histogram-all></div> </div> </div> </div> </div> </div> <script src=scripts/74495ba5.vendor.js></script> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> <script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    <![endif]--> <div> <header class=colored> <div class=container> <div class=row> <div class="col-sm-8 col-sm-offset-2"> <h1>Kommer ditt jobb att digitaliseras bort?</h1> <div class=search> <input id=job data-provide=typeahead placeholder="Sök efter ett yrke" onclick="this.setSelectionRange(0, this.value.length)"> <div class=examples></div> </div> </div> </div> </div> </header> <section class="results hidden"> <div class=container> <div class="col-sm-8 col-sm-offset-2"> <h2>Ja, det ser ut så.</h2> <div id=gauge></div> <p>Så stor är risken att det här yrket försvinner inom XX år på grund av digitaliseringen.</p> <!--<div id="probability">
+                Risken att det här yrket försvinner med digitaliseringen är <span class="value"></span>.
+              </div>--> <div id=comparison-sentence></div> </div> </div> </section> <section class="colored results hidden search-again"> <div class=container> <div class=row> <div class="col-sm-8 col-sm-offset-2"> <button class="btn btn-default btn-md" onclick=app.clearSearch()> Sök efter ett annat yrke </button> <div class=examples></div> </div> </div> </div> </section> <section class="results hidden"> <div class=container> <div class=row> <div class="col-sm-8 col-sm-offset-2"> <h2>Hur ser det ut inom andra branscher?</h2> </div> </div> <div class=row> <div class=col-sm-6> <h4>De här yrkena överlever</h4> <table id=low class=table></table> <button class="btn btn-md btn-colored btn-default" onclick="app.updateList($('#low'), app.lowRiskJobs())"> <span class="glyphicon glyphicon-refresh" aria-hidden=true></span> Visa fler yrken med låg risk </button> </div> <!--<div class="col-xs-4">
+              <h4>Liknande yrken</h4>
+              <table id="similar" class="table"></table>
+            </div>--> <div class=col-sm-6> <h4>De här yrken ligger illa till</h4> <table id=high class=table></table> <button class="btn btn-md btn-colored btn-default" onclick="app.updateList($('#high'), app.highRiskJobs())"> <span class="glyphicon glyphicon-refresh" aria-hidden=true></span> Visa fler yrken med hög risk </button> </div> </div> </div> <div id=lists class=row> </div></section> <!--      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            
+            <div id="results" class="hidden">
+              
+
+              
+
+              
+              </div>
+
+              
+              <div id="histogram-all"></div>
+            </div>
+          </div>
+        </div>--> </div>  <script src=scripts/74495ba5.vendor.js></script> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> <script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='//www.google-analytics.com/analytics.js';
@@ -11,4 +29,4 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');</script> <script>var app = {};
     app.themeColor = '#328032';
     app.baseColor = '#999';
-    app.dataPath = 'data/jobs.tsv';</script> <script src=scripts/6aecf527.main.js></script> <script>app.init();</script>  
+    app.dataPath = 'data/jobs.tsv';</script> <script src=scripts/6e9ef412.main.js></script> <script>app.init();</script>  
